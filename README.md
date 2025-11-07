@@ -1,22 +1,6 @@
 # rag-langchain-doc-bot
 RAG demo with LangChain, Chroma, and Streamlit. Ingest PDFs or text, ask questions, view sources. Optional RAGAS eval.
 
-rag-langchain-doc-bot/
-  ├─ app/
-  │  ├─ api.py                    # FastAPI endpoints: /ingest, /ask, /health
-  │  ├─ rag_pipeline.py           # Retriever+LLM chain with source citing
-  │  ├─ embedder.py               # Pluggable embeddings (OpenAI or HF)
-  │  ├─ index_store.py            # Chroma/FAISS wrapper
-  │  ├─ evaluator.py              # RAGAS eval on held-out QAs
-  │  └─ settings.py               # Pydantic config (keys, model names)
-  ├─ ui/
-  │  └─ streamlit_app.py          # Simple chat UI with file upload + source panel
-  ├─ data/                        # sample docs (3–5 PDFs)
-  ├─ requirements.txt
-  ├─ Makefile
-  └─ README.md
-
-
 ## Quickstart
 ```bash
 make setup
