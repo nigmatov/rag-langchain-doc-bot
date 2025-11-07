@@ -1,0 +1,2 @@
+This is a small sample document about Retrieval Augmented Generation (RAG).
+RAG combines an external knowledge retriever with a language model.
